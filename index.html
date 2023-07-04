@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Management Crud</title>
+    <script src="https://kit.fontawesome.com/74e383a765.js" crossorigin="anonymous"></script>
+    <style>
+              h1{
+                  color:white;
+                  padding-left: 10px;
+              }
+
+              body{
+                  box-sizing: border-box;
+                  margin: 0px;
+                  background-color: black;
+                  padding-left: 10px;
+              }
+            /* Add your CSS styles here */
+            #student-form {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              align-items: center;
+              gap: 10px;
+
+
+
+
+            }
+            #student-form input {
+              width:30%;
+              border: 1px solid white;
+              color:Grey;
+              height: 24px;
+              background-color: transparent;
+              padding: 10px;
+            }
+            #submit-btn{
+              width: 40%;
+              color:black;
+              border: none;
+              background-color: white;
+              height: 32px;
+              margin-top: 16px;
+              margin-bottom: 16px;
+
+            }
+
+            #search-container{
+              margin-top: 30px;
+              width: 100%;
+
+
+            }
+
+            #search-container input{
+
+              width: 80%;
+              border: 1px solid white;
+              color:Grey;
+              height: 24px;
+              background-color: transparent;
+              padding: 10px;
+            }
+
+            #students-table{
+              color:white;
+              border-collapse: separate;
+      -webkit-border-horizontal-spacing: 0px;
+      -webkit-border-vertical-spacing: 0px;
+      width: 80%;
+      margin-top: 30px;
+      border: 1px solid white;
+      text-align: center;
+      
+
+            }
+
+            #students-table th{
+              border: 1px solid white;
+              padding: 10px;
+              font-weight:lighter;
+              
+
+            }
+            #students-table td{
+                border-right: 1px solid white;
+                padding: 10px;
+                margin: 10px;
+            }
+           
+           
+            i{
+                color:white;
+                margin-left:5px;
+                
+            }
+            span{
+                float:right;
+                padding-left: 10px;
+            }
+    </style>
+  </head>
+  <body>
+
+    
+    <h1>Student Management System</h1>
+    <div id="div-student-form">
+      <form id="student-form">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="grade" placeholder="GPA" required />
+        <input type="number" id="age" placeholder="Age" required />
+        <input type="text" id="degree" placeholder="Degree" required />
+        <button type="submit" id="submit-btn">Add Student</button>
+      </form>
+    </div>
+    <div id="search-container">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search by name, email, or degree"
+      />
+    </div>
+
+    <table id="students-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>GPA</th>
+          <th>Degree</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Students will be dynamically added here -->
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
