@@ -1,0 +1,81 @@
+h1 {
+    color: white;
+    padding-left: 10px;
+  }
+
+  body {
+    box-sizing: border-box;
+    margin: 0px;
+    background-color: black;
+    padding-left: 10px;
+  }
+  
+  #student-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  #student-form input {
+    width: 30%;
+    border: 1px solid white;
+    color: Grey;
+    height: 24px;
+    background-color: transparent;
+    padding: 10px;
+  }
+  #submit-btn {
+    width: 40%;
+    color: black;
+    border: none;
+    background-color: white;
+    height: 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  #search-container {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  #search-container input {
+    width: 80%;
+    border: 1px solid white;
+    color: Grey;
+    height: 24px;
+    background-color: transparent;
+    padding: 10px;
+  }
+
+  #students-table {
+    color: white;
+    border-collapse: separate;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+    width: 80%;
+    margin-top: 30px;
+    border: 1px solid white;
+    text-align: center;
+  }
+
+  #students-table th {
+    border: 1px solid white;
+    padding: 10px;
+    font-weight: lighter;
+  }
+  #students-table td {
+    border-right: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  i {
+    color: white;
+    margin-left: 5px;
+  }
+  span {
+    float: right;
+    padding-left: 10px;
+  }
